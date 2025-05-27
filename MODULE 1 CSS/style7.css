@@ -1,0 +1,16 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Zebra striping */
+tr:nth-child(even) {
+  background-color: #eee;
+}

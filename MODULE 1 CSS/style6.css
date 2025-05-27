@@ -1,0 +1,24 @@
+/* Link styles */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+
+/* List styles */
+ul.nav {
+  list-style: none;
+  padding: 0;
+}
+
+ul.nav li {
+  display: inline-block;
+  margin-right: 10px;
+}

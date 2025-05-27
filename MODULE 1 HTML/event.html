@@ -1,0 +1,26 @@
+<form onsubmit="showConfirmation(); return false;">
+  <input type="text" name="name" placeholder="Name" required autofocus><br>
+  <input type="email" name="email" placeholder="Email" required><br>
+  <input type="date" name="date" required><br>
+  <select name="eventType" required>
+    <option value="">Select Event Type</option>
+    <option value="Festival">Festival</option>
+    <option value="Workshop">Workshop</option>
+  </select><br>
+  <textarea name="message" placeholder="Your message"></textarea><br>
+  <button type="submit">Submit</button>
+  <output id="confirmation"></output>
+</form>
+
+<script>
+function showConfirmation() {
+  document.getElementById('confirmation').innerText = "Thank you for registering!";
+}
+</script>
+
+<style>
+  form {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+</style>

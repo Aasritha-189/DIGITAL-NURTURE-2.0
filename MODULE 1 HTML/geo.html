@@ -1,0 +1,31 @@
+<button onclick="findNearbyEvents()">Find Nearby Events</button>
+<p id="location"></p>
+
+<script>
+function findNearbyEvents() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError, {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+    });
+  } else {
+    alert("Geolocation not supported!");
+  }
+}
+
+function showPosition(position) {
+  document.getElementById('location').innerText = "Latitude: " + position.coords.latitude + ", Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied location request.");
+      break;
+    case error.TIMEOUT:
+      alert("Location request timed out.");
+      break;
+  }
+}
+</script>

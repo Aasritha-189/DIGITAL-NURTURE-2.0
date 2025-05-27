@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debugging Example</title>
+  <style>
+    .test {
+      color: red;
+    }
+  </style>
+  <script>
+    let count = 0;
+    function debugFunction() {
+      count++;
+      console.log("Clicked:", count);
+      debugger;
+    }
+  </script>
+</head>
+<body>
+
+  <button onclick="debugFunction()">Click to Debug</button>
+  <p class="test">Right-click and Inspect Element to edit this color in DevTools.</p>
+
+</body>
+</html>

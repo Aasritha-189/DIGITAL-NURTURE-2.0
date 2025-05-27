@@ -1,0 +1,20 @@
+
+Set up Bootstrap with Sass using npm
+  npm install bootstrap
+
+Directory setup:
+
+ /my-bootstrap-project/
+  /scss/
+    custom.scss
+  /dist/
+    custom.css (compiled)
+
+custom.scss:
+
+  // Import Bootstrap source
+  @import "../node_modules/bootstrap/scss/bootstrap";
+
+Compile Sass:
+
+  sass scss/custom.scss dist/custom.css

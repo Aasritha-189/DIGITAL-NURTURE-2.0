@@ -1,0 +1,29 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style all h2 */
+h2 {
+  color: darkgreen;
+}
+
+/* Banner */
+#mainHeader {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+/* Event cards */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Group selector */
+h3, p {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
